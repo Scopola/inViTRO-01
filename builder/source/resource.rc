@@ -1,0 +1,17 @@
+#include <windows.h>
+#include "resource.h"
+
+IDD_BUILDER DIALOGEX 0, 0, 238, 138, 0
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUPWINDOW | WS_VISIBLE | WS_DLGFRAME
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 8, "Tahoma"
+{
+  EDITTEXT   IDC_URL, 2, 16, 233, 16, ES_AUTOHSCROLL | WS_DLGFRAME, WS_EX_STATICEDGE
+  EDITTEXT   IDC_PATH, 2, 44, 233, 16, ES_AUTOHSCROLL | WS_DLGFRAME, WS_EX_STATICEDGE
+  PUSHBUTTON   "Build", IDB_BUILD, 181, 64, 54, 15, WS_BORDER, WS_EX_STATICEDGE
+  CTEXT   "URL (link to file to download):", -1, 2, 4, 233, 10
+  CTEXT   "PATH (path with filename to save):", -1, 2, 33, 233, 10
+  CTEXT   "DISCLAIMER\r\nThis POC is provided 'as is' for educational purposes only. \r\nNo malicious uses are allowed!\r\n____________", -1, 1, 89, 236, 33, WS_DISABLED
+  LTEXT   "Status: n/a", IDC_STATUS, 3, 63, 175, 10
+  CTEXT   "[Coded by YANiS]", -1, 1, 126, 236, 10
+}
